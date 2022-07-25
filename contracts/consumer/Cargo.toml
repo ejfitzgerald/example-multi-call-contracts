@@ -5,9 +5,9 @@ authors = ["Ed FitzGerald <ejafitzgerald@gmail.com>"]
 edition = "2018"
 
 exclude = [
-  # Those files are rust-optimizer artifacts. You might want to commit them for convenience but they should not be part of the source code publication.
-  "contract.wasm",
-  "hash.txt",
+    # Those files are rust-optimizer artifacts. You might want to commit them for convenience but they should not be part of the source code publication.
+    "contract.wasm",
+    "hash.txt",
 ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -32,9 +32,9 @@ optimize = """docker run --rm -v "$(pwd)":/code \
 cosmwasm-std = "1.0.0"
 cosmwasm-storage = "1.0.0"
 cw-storage-plus = "0.13.2"
-cw2 = "0.13.2"
 schemars = "0.8.8"
 serde = { version = "1.0.137", default-features = false, features = ["derive"] }
+oracle = { path = "../oracle", features = ["library"] }
 thiserror = { version = "1.0.31" }
 
 [dev-dependencies]

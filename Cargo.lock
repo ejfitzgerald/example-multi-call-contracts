@@ -68,7 +68,7 @@ dependencies = [
  "cosmwasm-storage",
  "cw-multi-test",
  "cw-storage-plus",
- "cw2",
+ "oracle",
  "schemars",
  "serde",
  "thiserror",
@@ -226,18 +226,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cw2"
-version = "0.13.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04cf4639517490dd36b333bbd6c4fbd92e325fd0acf4683b41753bc5eb63bfc1"
-dependencies = [
- "cosmwasm-std",
- "cw-storage-plus",
- "schemars",
- "serde",
-]
-
-[[package]]
 name = "der"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -271,6 +259,22 @@ name = "dyn-clone"
 version = "1.0.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9d07a982d1fb29db01e5a59b1918e03da4df7297eaeee7686ac45542fd4e59c8"
+
+[[package]]
+name = "e2e"
+version = "0.1.0"
+dependencies = [
+ "consumer",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cosmwasm-storage",
+ "cw-multi-test",
+ "cw-storage-plus",
+ "oracle",
+ "schemars",
+ "serde",
+ "thiserror",
+]
 
 [[package]]
 name = "ecdsa"

@@ -1,8 +1,9 @@
 [workspace]
 
 members = [
-  "oracle",
-  "consumer",
+    "contracts/oracle",
+    "contracts/consumer",
+    "e2e",
 ]
 
 
