@@ -447,7 +447,6 @@ dependencies = [
  "cosmwasm-storage",
  "cw-multi-test",
  "cw-storage-plus",
- "cw2",
  "schemars",
  "serde",
  "thiserror",
